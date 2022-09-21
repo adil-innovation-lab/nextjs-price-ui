@@ -15,7 +15,7 @@ import { CheckIcon } from "../icons/Icons";
 export const ListItem = (props: StackProps) => {
   const { children, ...rest } = props;
   return (
-    <HStack as="li" spacing="20px" {...rest}>
+    <HStack as="li" spacing="5" {...rest}>
       <Icon as={CheckIcon} h="22px" w="22px" />
       <Text>{children}</Text>
     </HStack>
@@ -34,25 +34,25 @@ export const Pricing = () => {
     >
       <Flex>
         <Box bg="#F0EAFB" p="60px">
-          <Text fontSize="24px" fontWeight="800">
+          <Text fontSize="2xl" fontWeight="extrabold">
             Premium PRO
           </Text>
           <Heading as="h3" fontSize="60px">
             $329
           </Heading>
-          <Text color="#171923" fontSize="18px" fontWeight="500" mt="8px">
+          <Text color="#171923" fontSize="lg" fontWeight="medium" mt="2">
             billed only once
           </Text>
-          <Button colorScheme="purple" size="lg" w="282px" mt="24px">
+          <Button colorScheme="purple" size="lg" w="282px" mt="6">
             Get Started
           </Button>
         </Box>
-        <Box p="60px" fontSize="18px" bg="white">
+        <Box p="60px" fontSize="lg" bg="white">
           <Text textAlign="left">
             Access these features when you get this pricing package for your
             business.
           </Text>
-          <Stack as="ul" spacing="20px" pt="24px">
+          <Stack as="ul" spacing="5" pt="6">
             <ListItem>International calling and messaging API</ListItem>
             <ListItem>Additional phone numbers</ListItem>
             <ListItem>Automated messages via Zapier</ListItem>

@@ -6,23 +6,23 @@ import { VscDebugRestart } from "react-icons/vsc";
 
 export const Features = () => {
   return (
-    <Box maxW="1024px" margin="auto" pt="60px" pb="32px">
-      <HStack px="48px" spacing="20px">
-        <HStack spacing="24px">
+    <Box maxW="1024px" margin="auto" pt="60px" pb="8">
+      <HStack px="12" spacing="5">
+        <HStack spacing="6">
           <RiShieldStarLine size="48px" color="purple" />
-          <Text textAlign="left" fontSize="18px" fontWeight="700">
+          <Text textAlign="left" fontSize="lg" fontWeight="bold">
             30 days money back guarantee
           </Text>
-        </HStack>
-        <HStack spacing="24px">
+        </HStack> 
+        <HStack spacing="6">
           <BsTagsFill size="48px" color="purple" />
-          <Text textAlign="left" fontSize="18px" fontWeight="700">
+          <Text textAlign="left" fontSize="lg" fontWeight="bold">
             30 days money back guarantee
           </Text>
         </HStack>
-        <HStack spacing="24px">
+        <HStack spacing="6">
           <VscDebugRestart size="48px" color="purple" />
-          <Text textAlign="left" fontSize="18px" fontWeight="700">
+          <Text textAlign="left" fontSize="lg" fontWeight="bold">
             30 days money back guarantee
           </Text>
         </HStack>
