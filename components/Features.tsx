@@ -1,4 +1,4 @@
-import { HStack, Box, Text, Stack } from "@chakra-ui/react";
+import { HStack, Box, Text, Stack, useBreakpointValue } from "@chakra-ui/react";
 import React from "react";
 import { RiShieldStarLine } from "react-icons/ri";
 import { BsTagsFill } from "react-icons/bs";
@@ -6,24 +6,57 @@ import { VscDebugRestart } from "react-icons/vsc";
 
 export const Features = () => {
   return (
-    <Box maxW="1024px" margin="auto" pt="60px" pb="8">
-      <Stack direction={["column","column","row"]} px="12" spacing="5">
-        <HStack spacing="6">
-          <RiShieldStarLine size="48px" color="#116466" />
-          <Text textAlign="left" fontSize="lg" fontWeight="bold" color="#2C3531">
-            30 days money back guarantee
-          </Text>
-        </HStack> 
-        <HStack spacing="6">
-          <BsTagsFill size="48px" color="#116466" />
-          <Text textAlign="left" fontSize="lg" fontWeight="bold" color="#2C3531">
+    <Box
+      maxW="1024px"
+      margin={[null, null, null, "auto"]}
+      px={["20px", "20px", "20px", "60px"]}
+      py={["30px", "60px"]}
+    >
+      <Stack
+        direction={["column", "column", "row"]}
+        px={["20px", "60px"]}
+        spacing={["5", "5", "10"]}
+      >
+        <HStack spacing="5">
+          <RiShieldStarLine
+            size={useBreakpointValue(["36px", "72px"])}
+            color="#116466"
+          />
+          <Text
+            textAlign="left"
+            fontSize={["md", "lg"]}
+            fontWeight="bold"
+            color="#2C3531"
+          >
             30 days money back guarantee
           </Text>
         </HStack>
-        <HStack spacing="6">
-          <VscDebugRestart size="48px" color="#116466" />
-          <Text textAlign="left" fontSize="lg" fontWeight="bold" color="#2C3531">
-            30 days money back guarantee
+        <HStack spacing="5">
+          <BsTagsFill
+            size={useBreakpointValue(["36px", "72px"])}
+            color="#116466"
+          />
+          <Text
+            textAlign="left"
+            fontSize={["md", "lg"]}
+            fontWeight="bold"
+            color="#2C3531"
+          >
+            No setup fees 100% hassle-free
+          </Text>
+        </HStack>
+        <HStack spacing="5">
+          <VscDebugRestart
+            size={useBreakpointValue(["36px", "72px"])}
+            color="#116466"
+          />
+          <Text
+            textAlign="left"
+            fontSize={["md", "lg"]}
+            fontWeight="bold"
+            color="#2C3531"
+          >
+            No monthly subscription. Pay once and for all
           </Text>
         </HStack>
       </Stack>
