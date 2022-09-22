@@ -12,7 +12,7 @@ export const Header = () => {
         px="8"
         textAlign={["left","left","center"]}
       >
-        <Heading fontWeight="extrabold" fontSize={["3xl","3xl","5xl"]}>
+        <Heading fontWeight="extrabold" fontSize={["3xl","3xl","5xl"]} bgGradient='radial(gray.100, gray.600)' bgClip='text'>
           Simple pricing for your business
         </Heading>
         <Text fontWeight="medium" fontSize={["lg","lg","2xl"]} pt="4">
